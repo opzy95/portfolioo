@@ -1,0 +1,131 @@
+.about-section {
+  display: grid;
+  grid-template-columns: 1.15fr 0.9fr;
+  gap: 3rem;
+  padding: 2rem 2rem 4rem;
+  align-items: center;
+}
+
+.about-copy {
+  animation: fadeIn 0.9s ease both;
+}
+
+.section-header span {
+  display: inline-block;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  color: var(--text);
+  font-size: clamp(2rem, 2.6vw, 2.8rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.12;
+}
+
+.about-copy p {
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 1.3rem;
+  max-width: 43rem;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-highlights div {
+  padding: 1.2rem;
+  border-radius: 1.4rem;
+  border: 1px solid var(--card-border);
+  background: var(--surface);
+}
+
+.about-highlights strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.about-highlights span {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.about-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  position: relative;
+  width: min(100%, 360px);
+  padding: 2.2rem 1.75rem 1.75rem;
+  border-radius: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.profile-frame {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(111, 92, 255, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(70, 214, 255, 0.14), transparent 28%);
+  pointer-events: none;
+}
+
+.profile-avatar {
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 1.75rem;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.profile-meta {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+.profile-meta p {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.profile-meta span {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 880px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}
