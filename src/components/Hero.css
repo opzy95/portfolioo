@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  padding: 2.5rem 2rem;
+  padding: calc(2.5rem + var(--nav-height, 68px)) 2rem 2.5rem;
   position: relative;
 }
 
@@ -65,7 +65,7 @@
   }
 }
 
-..hero-label {
+.hero-label {
   display: inline-flex;
   padding: 0.45rem 0.9rem;
   background: var(--accent-soft);
@@ -163,8 +163,10 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
-  width: 160px;
-  height: 160px;
+  left: 10px;
+  /* down: 10px; */
+  width: 400px;
+  height: 400px;
   border-radius: 2rem;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -193,6 +195,7 @@
 }
 
 .hero-panel {
+    display: none;
   position: absolute;
   bottom: 2rem;
   left: 2rem;
@@ -328,5 +331,10 @@
 
   .hero-right {
     order: -1;
+  }
+  .hero-image-frame{
+    width: 220px;
+    height: 220px;
+    top: 5px;
   }
 }
