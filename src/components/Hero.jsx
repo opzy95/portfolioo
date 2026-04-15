@@ -2,15 +2,25 @@ import './Hero.css'
 
 const Hero = () => {
   const particles = Array.from({ length: 8 })
+  const heroCopy = 'Building fast, modern, and scalable web experiences for ambitious brands, startups, and teams that want polished front-end craftsmanship.'
+  const heroWords = heroCopy.split(' ')
 
   return (
-    <section id="home" className="hero-section">
+    <section id="home" className="hero-section scroll-reveal">
       <div className="hero-left">
         <span className="hero-label">Front-End Developer</span>
         <h1>Adeoti Opeyemi</h1>
         <p className="hero-copy">
-          Building fast, modern, and scalable web experiences for ambitious brands,
-          startups, and teams that want polished front-end craftsmanship.
+          {heroWords.map((word, index) => (
+            <span
+              key={`${word}-${index}`}
+              className="hero-copy-word"
+              style={{ '--word-delay': `${index * 0.08}s` }}
+            >
+              {word}
+              {index !== heroWords.length - 1 ? ' ' : ''}
+            </span>
+          ))}
         </p>
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary">View Projects</a>

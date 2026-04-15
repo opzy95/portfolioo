@@ -21,6 +21,26 @@ function App() {
     window.localStorage.setItem('portfolio-theme', theme)
   }, [theme])
 
+  useEffect(() => {
+    const revealElements = document.querySelectorAll('.scroll-reveal')
+    if (!revealElements.length) return
+
+    const observer = new IntersectionObserver(
+      (entries, observerInstance) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed')
+            observerInstance.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -15% 0px' }
+    )
+
+    revealElements.forEach((element) => observer.observe(element))
+    return () => observer.disconnect()
+  }, [])
+
   const toggleTheme = () => {
     setTheme((current) => (current === 'dark' ? 'light' : 'dark'))
   }

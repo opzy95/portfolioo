@@ -52,7 +52,6 @@
 
 .brand-accent {
   color: var(--nav-accent);
-}
 
 /* ─── Desktop Nav Links ─── */
 .nav-links {
@@ -119,6 +118,7 @@
   letter-spacing: 0.01em;
 }
 
+}
 .btn-icon {
   padding: 0.42rem 0.9rem;
   background: rgba(255, 255, 255, 0.05);

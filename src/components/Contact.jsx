@@ -2,7 +2,7 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section scroll-reveal">
       <div className="contact-shell">
         <div className="section-header">
           <span>Contact</span>

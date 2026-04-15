@@ -82,6 +82,18 @@ button {
   margin: 0 auto;
 }
 
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .section-header {
   display: grid;
   gap: 0.8rem;

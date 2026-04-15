@@ -107,6 +107,29 @@
   font-size: 1.05rem;
 }
 
+.hero-copy-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: wordAppear 0.45s ease-out forwards;
+  animation-delay: var(--word-delay, 0s);
+}
+
+.hero-copy-word:nth-child(3n) {
+  letter-spacing: 0.02em;
+}
+
+@keyframes wordAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

@@ -23,7 +23,7 @@ const timeline = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="experience-section">
+    <section id="experience" className="experience-section scroll-reveal">
       <div className="section-header">
         <span>Experience</span>
         <h2>Career highlights and growth through real product work.</h2>

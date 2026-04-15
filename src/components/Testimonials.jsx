@@ -20,7 +20,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section scroll-reveal">
       <div className="section-header">
         <span>Testimonials</span>
         <h2>What collaborators say about working together.</h2>

@@ -2,7 +2,7 @@ import './About.css'
 
 const About = () => {
   return (
-    <section id="about" className="about-section">
+    <section id="about" className="about-section scroll-reveal">
       <div className="about-copy">
         <div className="section-header">
           <span>About Me</span>

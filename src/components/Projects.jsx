@@ -53,7 +53,7 @@ const projectList = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="projects-section scroll-reveal">
       <div className="section-header">
         <span>Projects</span>
         <h2>Selected work that shows design, speed, and polish.</h2>
