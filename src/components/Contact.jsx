@@ -1,4 +1,4 @@
-import './Contact.css'
+import "./Contact.css";
 
 const Contact = () => {
   return (
@@ -11,19 +11,32 @@ const Contact = () => {
         <div className="contact-layout">
           <div className="contact-copy">
             <p>
-              Ready to turn your ideas into fast, memorable web products? Send a message.
+              Ready to turn your ideas into fast, memorable web products? Send a
+              message.
             </p>
             <div className="contact-details">
               <div>
                 <strong>Email</strong>
-                <p>hello@opzytech.dev</p>
+                <p>
+                  <a href="mailto:opzyenterprise95@gmail.com?subject=Order%20Inquiry&body=Hi%20Opzy%20Enterprise,">
+                    Email Contact
+                  </a>
+                </p>
               </div>
               <div>
                 <strong>Social</strong>
                 <p>
-                  <a href="#">GitHub</a>
+                  <a href="https://github.com/opzy95"
+                    target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
                   <a href="#">LinkedIn</a>
-                  <a href="#">Twitter</a>
+                  <a
+                    href="https://x.com/Opelize_0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </a>
                 </p>
               </div>
             </div>
@@ -41,12 +54,14 @@ const Contact = () => {
               Message
               <textarea placeholder="Tell me about your project" rows="5" />
             </label>
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

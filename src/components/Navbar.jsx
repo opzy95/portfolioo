@@ -16,7 +16,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
       <div className="brand">
         OpzyTech<span className="brand-accent">.</span>
       </div>
-      <nav className="nav-links">
+      <nav className="nav-links" all>
         {navItems.map((item) => (
           <a key={item.href} href={item.href}>
             {item.label}

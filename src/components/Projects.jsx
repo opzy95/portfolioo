@@ -2,51 +2,51 @@ import './Projects.css'
 
 const projectList = [
   {
-    title: 'LaunchPad UI',
+    title: 'A Fashion Brand',
     image: '/images/project-image1%20(1).png',
     description: 'A modern landing page with interactive animations, fast loading, and polished spacing.',
     tech: 'React · Tailwind · Vite',
-    demo: '#',
+    demo: 'https://kcee-clothing.vercel.app/',
     code: '#'
   },
   {
-    title: 'Crypto Dashboard',
+    title: 'A Kitchen E-commerce',
     image: '/images/project-image1%20(2).png',
     description: 'A responsive analytics panel with gradient charts, cards, and micro interactions.',
     tech: 'Vue · CSS Grid · Motion',
-    demo: '#',
+    demo: 'https://araire-ventures.vercel.app/',
     code: '#'
   },
   {
-    title: 'Studio Portfolio',
+    title: 'A Food E-commerce Website',
     image: '/images/project-image1%20(3).png',
-    description: 'A premium portfolio experience with glassmorphism, content rhythm, and smooth scroll.',
+    description: 'A premium food website experience with glassmorphism, content rhythm, and smooth scroll.',
     tech: 'React · Shadcn UI · JavaScript',
-    demo: '#',
+    demo: 'https://opzyfoods.vercel.app/',
     code: '#'
   },
   {
-    title: 'Product Showcase',
+    title: 'A Crypto Wallet',
     image: '/images/project-image1%20(4).png',
-    description: 'A product landing experience with refined spacing, gradients, and key conversion points.',
+    description: 'A Crypto Wallet landing experience with refined spacing, gradients, and key conversion points.',
     tech: 'HTML · CSS · JavaScript',
-    demo: '#',
+    demo: 'https://crypto-wallet-neon.vercel.app/',
     code: '#'
   },
   {
-    title: 'Agency Mockup',
+    title: 'A School website Landing Page',
     image: '/images/project-image1%20(5).png',
-    description: 'A visual-first agency interface with bold typography and polished content hierarchy.',
+    description: 'A School landing interface with bold typography and polished content hierarchy.',
     tech: 'Figma · React · CSS',
-    demo: '#',
+    demo: 'https://tasuedproject-msgc.vercel.app/',
     code: '#'
   },
   {
-    title: 'Analytics View',
+    title: 'A School Landing Page',
     image: '/images/project-image1%20(6).png',
-    description: 'An analytics dashboard design with charts, cards, and modern data presentation.',
+    description: 'A School landing page, with a nice presentation.',
     tech: 'Vue · Charting · Responsive UI',
-    demo: '#',
+    demo: 'https://aap-beta.vercel.app/',
     code: '#'
   }
 ]

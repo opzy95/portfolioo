@@ -19,7 +19,6 @@
   --font-ui: 'Outfit', sans-serif;
 }
 
-/* ─── Base ─── */
 .navbar {
   position: fixed;
   top: 0;
@@ -38,7 +37,6 @@
   font-family: var(--font-ui);
 }
 
-/* ─── Brand ─── */
 .brand {
   font-family: var(--font-brand);
   font-size: 1.25rem;
@@ -50,10 +48,11 @@
   user-select: none;
 }
 
+/* FIX 1: Added missing closing brace */
 .brand-accent {
   color: var(--nav-accent);
+}
 
-/* ─── Desktop Nav Links ─── */
 .nav-links {
   display: flex;
   align-items: center;
@@ -94,14 +93,13 @@
   transform: translateX(-50%) scaleX(1);
 }
 
-/* ─── Nav Actions ─── */
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
-/* ─── Buttons ─── */
+/* FIX 2: Removed stray closing brace after .btn */
 .btn {
   font-family: var(--font-ui);
   font-size: 0.82rem;
@@ -118,7 +116,6 @@
   letter-spacing: 0.01em;
 }
 
-}
 .btn-icon {
   padding: 0.42rem 0.9rem;
   background: rgba(255, 255, 255, 0.05);
@@ -156,7 +153,6 @@
   box-shadow: 0 0 18px var(--nav-accent-glow);
 }
 
-/* ─── Hamburger ─── */
 .btn-hamburger {
   display: none;
   flex-direction: column;
@@ -181,7 +177,6 @@
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* ─── Mobile Menu ─── */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -265,7 +260,6 @@
   justify-content: center;
 }
 
-/* ─── Backdrop ─── */
 .mobile-backdrop {
   display: none;
   position: fixed;
@@ -283,7 +277,6 @@
   pointer-events: all;
 }
 
-/* ─── Responsive ─── */
 @media (max-width: 900px) {
   .nav-links {
     display: none;
