@@ -357,9 +357,17 @@
   }
 
   .hero-image-frame {
-    width: 220px;
-    height: 220px;
+    width: min(100%, 260px);
+    height: min(100%, 260px);
     top: 5px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .hero-visual {
+    width: 100%;
+    padding: 1.5rem;
   }
 
   .hero-highlights {
