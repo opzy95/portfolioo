@@ -2,13 +2,13 @@ import './Hero.css'
 
 const Hero = () => {
   const particles = Array.from({ length: 8 })
-  const heroCopy = 'Building fast, modern, and scalable web experiences for ambitious brands, startups, and teams that want polished front-end craftsmanship.'
+  const heroCopy = 'Building fast, modern, and scalable web experiences for ambitious brands, startups, and teams that want polished full-stack craftsmanship.'
   const heroWords = heroCopy.split(' ')
 
   return (
     <section id="home" className="hero-section scroll-reveal">
       <div className="hero-left">
-        <span className="hero-label">Front-End Developer</span>
+        <span className="hero-label">Full Stack Developer</span>
         <h1>Adeoti Opeyemi</h1>
         <p className="hero-copy">
           {heroWords.map((word, index) => (
@@ -18,9 +18,10 @@ const Hero = () => {
               style={{ '--word-delay': `${index * 0.08}s` }}
             >
               {word}
-              {index !== heroWords.length - 1 ? ' ' : ''}
             </span>
-          ))}
+          )).reduce((prev, curr, index) => (
+            index === 0 ? [curr] : [...prev, ' ', curr]
+          ), [])}
         </p>
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary">View Projects</a>

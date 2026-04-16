@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: 'Maya Johnson',
     role: 'Product Lead',
-    feedback: 'Adeoti delivered a polished front-end experience with thoughtful interaction design and excellent collaboration.'
+    feedback: 'Adeoti delivered a polished full-stack experience with thoughtful interaction design and excellent collaboration.'
   },
   {
     name: 'Daniel Kim',

@@ -6,10 +6,10 @@ const About = () => {
       <div className="about-copy">
         <div className="section-header">
           <span>About Me</span>
-          <h2>Crafting premium web experiences with a polished front-end focus.</h2>
+          <h2>Crafting premium web experiences with a polished full-stack focus.</h2>
         </div>
         <p>
-          I’m a front-end developer with a passion for building immersive digital
+          I’m a full-stack developer with a passion for building immersive digital
           products. I blend elegant design systems with performant code to create
           interfaces that feel fast, intuitive, and memorable.
         </p>
@@ -43,7 +43,7 @@ const About = () => {
           />
           <div className="profile-meta">
             <p>Adeoti Opeyemi</p>
-            <span>Front-End Developer</span>
+            <span>Full Stack Developer</span>
           </div>
         </div>
       </div>

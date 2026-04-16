@@ -2,13 +2,13 @@ import './Experience.css'
 
 const timeline = [
   {
-    title: 'Front-End Developer Intern',
+    title: 'Full Stack Developer Intern',
     company: 'Tech Studio',
     date: '2024',
     description: 'Built responsive interfaces, contributed to component libraries, and improved page performance across desktop and mobile.'
   },
   {
-    title: 'Freelance Front-End Designer',
+    title: 'Freelance Full Stack Developer',
     company: 'Independent Projects',
     date: '2023',
     description: 'Delivered polished landing pages, prototype interactions, and design handoff assets for startups and founders.'
@@ -17,7 +17,7 @@ const timeline = [
     title: 'Consulting Partner',
     company: 'Growth Labs',
     date: '2022',
-    description: 'Advised product teams on accessibility, UI consistency, and front-end architecture for rapid launch cycles.'
+    description: 'Advised product teams on accessibility, UI consistency, and full-stack architecture for rapid launch cycles.'
   }
 ]
 
