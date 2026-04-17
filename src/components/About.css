@@ -128,4 +128,7 @@
   .about-highlights {
     grid-template-columns: 1fr;
   }
+  .about-visual {
+    display: none;
+  }
 }
