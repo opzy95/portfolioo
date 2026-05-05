@@ -100,8 +100,9 @@
 }
 
 .profile-meta p {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.10rem;
+  font-weight: 400;
+  padding: 15px;
 }
 
 .profile-meta span {

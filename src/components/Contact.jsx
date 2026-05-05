@@ -24,6 +24,14 @@ const Contact = () => {
                 </p>
               </div>
               <div>
+                <strong>Phone</strong>
+                <p>
+                  <a href="tel:+2348137186223">
+                    +2348137186223
+                  </a>
+                </p>
+              </div>
+              <div>
                 <strong>Social</strong>
                 <p>
                   <a href="https://github.com/opzy95"
